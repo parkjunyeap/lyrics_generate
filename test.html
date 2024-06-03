@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript, CSS, HTML 예시</title>
+    <style>
+      /* CSS 부분 */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        border: 2px solid blue;
+        text-align: center;
+        line-height: 200px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML 부분 -->
+    <div class="box" id="myBox">클릭하세요!</div>
+
+    <!-- JavaScript 부분 -->
+    <script>
+      var box = document.getElementById("myBox"); // HTML 요소를 가져와 변수에 할당
+      box.onclick = function () {
+        // 클릭 이벤트 처리
+        box.style.backgroundColor = "lightgreen"; // 배경색 변경
+        box.innerHTML = "클릭되었습니다!"; // 텍스트 변경
+      };
+    </script>
+  </body>
+</html>
